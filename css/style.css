@@ -107,21 +107,37 @@ footer{
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-
+nav a:hover {
+  text-decoration: underline;
+}
 
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
-
+.skip {
+  position: absolute ;
+  top: -40px;
+}
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+.skip:focus {
+  position: absolute ;
+  top: 20px;
+  
+}
 
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
-
+*:focus {
+  border: solid 2px black;
+}
 
 
 /* Step 4: Write selector/rule property to style the container */
-
+.container {
+  display:grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  gap: 15px;
+}
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
