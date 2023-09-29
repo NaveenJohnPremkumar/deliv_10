@@ -136,7 +136,7 @@ nav a:hover, nav a:focus {
   gap: 15px;
 }
 
-.container > :first-child {
+.container div:first-child {
   grid-column: 1 / -1;
   min-height: 500px;
   background-image: url('header.jpg');
@@ -203,12 +203,12 @@ first div in the grid  and place it in the grid. */
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     align-items: center;
     max-height: 250px;
     overflow: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 
@@ -232,16 +232,14 @@ first div in the grid  and place it in the grid. */
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
   .about, .clients, .method-image, .contact-image {
-    grid-column-start: 3; /* Start in the third column */
-    grid-column-end: span 2; /* Span two columns */
+    grid-column: 3 / span 2; /* Span two columns */
   }
   
   .method, 
 .contact, 
 .about-image, 
 .clients-image {
-  grid-column-start: 2; /* Start in the second column */
-  grid-column-end: span 2; /* Span two columns */
+  grid-column: 2 / span 2 ;/* Span two columns */
 }
 
 
